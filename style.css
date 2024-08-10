@@ -3,7 +3,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #00bfff;
+
 }
 
 /* Header */
@@ -13,7 +13,7 @@ header {
         url('assets/img/background1.jpeg'); /* Top background image */
     background-size: cover;
     background-position: center;
-    padding: 490px 0; /* Adjusted padding */
+    padding: 500px 0; /* Adjusted padding */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -96,16 +96,16 @@ nav {
 }
 
   
-  #thailand img {
+#thailand img {
     position: absolute;
     top: 633px;
     left: 72px;
     width: 639.985px;
     height: 219.479px;
     flex-shrink: 0;
-  }
+}
   
-  .tentang-button {
+.tentang-button {
     position: absolute;
     bottom: 0;
     left: 80px;
@@ -118,7 +118,89 @@ nav {
     border-radius: 100px;
     background: #FFC73C;
     box-shadow: 0px 18px 40px 12px rgba(255, 211, 103, 0.35);
+}
+
+.potrait {
+    display: flex;
+    flex-direction: row; /* Agar gambar berjajar horizontal */
+    gap: 10px; /* Jarak antar gambar */
+    position: absolute; /* Hanya jika diperlukan */
+    top: 633px;
+    right: 370px;
+    width: 228px;
+    height: 336px;
+}
+
+/*responsive*/
+
+/* iPad landscape and portrait */
+@media only screen and (max-width: 1024px) {
+    /* Adjust styles for iPad here */
+    .containerr {
+      max-width: 90%; /* Reduce max-width for iPad */
+      padding: 15px 20px; /* Reduce padding for iPad */
+    }
+    .nav-links {
+      gap: 20px; /* Reduce gap between links for iPad */
+    }
+    .nav-links li a {
+      font-size: 16px; /* Reduce font size for iPad */
+    }
+    .btn-register {
+      padding: 8px 15px; /* Reduce padding for iPad */
+      font-size: 16px; /* Reduce font size for iPad */
+    }
+    #thailand img {
+      width: 500px; /* Reduce image width for iPad */
+      height: 150px; /* Reduce image height for iPad */
+    }
+    .tentang-button {
+      padding: 10px 15px; /* Reduce padding for iPad */
+      font-size: 14px; /* Reduce font size for iPad */
+    }
+    .potrait {
+      gap: 5px; /* Reduce gap between images for iPad */
+      width: 180px; /* Reduce width for iPad */
+      height: 250px; /* Reduce height for iPad */
+    }
   }
+  
+  /* Mobile landscape and portrait */
+  @media only screen and (max-width: 768px) {
+    /* Adjust styles for mobile here */
+    .containerr {
+      max-width: 80%; /* Reduce max-width for mobile */
+      padding: 10px 15px; /* Reduce padding for mobile */
+    }
+    .nav-links {
+      flex-direction: column; /* Change to vertical layout for mobile */
+      gap: 10px; /* Reduce gap between links for mobile */
+    }
+    .nav-links li a {
+      font-size: 14px; /* Reduce font size for mobile */
+    }
+    .btn-register {
+      padding: 5px 10px; /* Reduce padding for mobile */
+      font-size: 14px; /* Reduce font size for mobile */
+    }
+    #thailand img {
+      width: 300px; /* Reduce image width for mobile */
+      height: 100px; /* Reduce image height for mobile */
+    }
+    .tentang-button {
+      padding: 5px 10px; /* Reduce padding for mobile */
+      font-size: 12px; /* Reduce font size for mobile */
+    }
+    .potrait {
+      flex-direction: column; /* Change to vertical layout for mobile */
+      gap: 5px; /* Reduce gap between images for mobile */
+      width: 120px; /* Reduce width for mobile */
+      height: 180px; /* Reduce height for mobile */
+    }
+  }
+
+
+
 
 /*main*/
 main {
@@ -240,11 +322,11 @@ main > * {
 .step-icon {
     width: 16px;
     height: 16px;
-    background: #FFAA00;
+    background: white;
     border-radius: 50%;
     margin-right: 15px;
     position: relative;
-    box-shadow: 0 0 10px rgba(255, 170, 0, 0.7);
+    box-shadow: 0 0 10px rgba(255, 251, 0, 0);
 }
 
 .step-icon::after {
@@ -301,25 +383,16 @@ main > * {
 
 /* Section */
 section {
-    background: linear-gradient(to bottom right, rgba(0, 162, 255, 0.8), rgba(255, 255, 255, 0.8)), url('assets/img/background3.jpeg');
+    background: linear-gradient(rgba(255, 255, 255, 0.5)), url('assets/img/background3.jpeg');
     background-size: cover;
     background-position: center;
     padding: 390px 0;
     display: flex;
     position: relative;
     overflow: hidden;
-    filter: saturate(0%); 
-
-} 
-.gallery {
-    background-size: cover;
-    background-position: center;
-    padding: 390px 0;
-    display: flex;
-    position: relative;
-    overflow: hidden;
-    filter: saturate(0%); 
 }
+
+
 
 
 .container {
@@ -328,11 +401,10 @@ section {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
-    background-color: #f5f5f5;
-
 
 }
 .left-section {
+    
     flex: 2;
     margin-right: 20px;
     margin-bottom: 20px;
@@ -340,11 +412,12 @@ section {
 }
 
 .left-section img {
-    width: 100%;
+    width: 636px;
     border-radius: 10px;
 }
 
 .headline {
+    width: 636px;
     background-color: #00a2ff;
     color: white;
     padding: 15px;
@@ -356,6 +429,7 @@ section {
     margin: 0;
     font-size: 18px;
     font-weight: bold;
+    
 }
 
 .headline span {
@@ -387,6 +461,7 @@ section {
 .news-item p {
     font-size: 16px;
     margin: 0;
+    color: black;
 }
 
 .news-item span {
@@ -461,6 +536,7 @@ button:hover {
     align-items: center;
     justify-content: center;
     height: 100vh;
+    background-color: #00bfff;
 }
 
 h1 {
