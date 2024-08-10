@@ -3,7 +3,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f8f8f8;
+    background-color: #00bfff;
 }
 
 /* Header */
@@ -13,7 +13,7 @@ header {
         url('assets/img/background1.jpeg'); /* Top background image */
     background-size: cover;
     background-position: center;
-    padding: 480px 0; /* Adjusted padding */
+    padding: 490px 0; /* Adjusted padding */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -45,13 +45,15 @@ header {
 }
 
 .logo {
-    font-size: 30px; /* Perbesar ukuran font */
+    font-size: 30px; /* remove this, as we're using an image now */
     font-weight: bold;
-    color: blue;
+    color: blue; /* remove this, as we're using an image now */
 }
 
-.logo span {
-    color: rgba(238, 64, 35, 1);
+.logo img {
+    width: 300px; /* adjust the width and height to your liking */
+    height: 40px;
+    object-fit: contain; /* ensure the image is scaled proportionally */
 }
 
 /* Navbar */
@@ -83,7 +85,7 @@ nav {
     background-color: #ffd700;
     padding: 10px 20px;
     border-radius: 100px;
-    color: #333;
+    color: white;
     text-decoration: none;
     font-weight: bold;
     font-size: 18px; /* Perbesar ukuran font */
@@ -93,7 +95,30 @@ nav {
     background-color: #ffcc00;
 }
 
-
+  
+  #thailand img {
+    position: absolute;
+    top: 633px;
+    left: 72px;
+    width: 639.985px;
+    height: 219.479px;
+    flex-shrink: 0;
+  }
+  
+  .tentang-button {
+    position: absolute;
+    bottom: 0;
+    left: 80px;
+    color: white;
+    display: flex;
+    padding: 15px 25px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 100px;
+    background: #FFC73C;
+    box-shadow: 0px 18px 40px 12px rgba(255, 211, 103, 0.35);
+  }
 
 /*main*/
 main {
@@ -275,17 +300,17 @@ main > * {
 }
 
 /* Section */
-/* section {
-    /* background: linear-gradient(to bottom right, rgba(0, 162, 255, 0.8), rgba(255, 255, 255, 0.8)), url('assets/img/background3.jpeg');
+section {
+    background: linear-gradient(to bottom right, rgba(0, 162, 255, 0.8), rgba(255, 255, 255, 0.8)), url('assets/img/background3.jpeg');
     background-size: cover;
     background-position: center;
     padding: 390px 0;
     display: flex;
     position: relative;
     overflow: hidden;
-    filter: saturate(0%); Mengatur saturasi background menjadi 0% (hitam putih) 
+    filter: saturate(0%); 
 
-} */
+} 
 .gallery {
     background-size: cover;
     background-position: center;
@@ -429,7 +454,67 @@ button:hover {
     }
 }
 
+/* Footer */
+.kami {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
 
+h1 {
+    font-size: 4rem;
+    color: white;
+    margin-bottom: 1rem;
+}
+
+h1 span {
+    font-size: 2rem;
+    color: white;
+}
+
+p {
+    color: white;
+    font-size: 1.2rem;
+    max-width: 700px;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+footer {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 0.8rem;
+}
+
+.social-icons {
+    display: flex;
+    gap: 10px;
+    margin-top: 1rem;
+}
+
+.social-icons a {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: white;
+    color: #00bfff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.social-icons a:hover {
+    background-color: #00bfff;
+    color: white;
+}
 
 
 
