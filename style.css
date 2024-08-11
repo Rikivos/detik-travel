@@ -593,8 +593,8 @@ footer {
     margin-top: 20px; /* space above footer bottom */
     border-top: 1px solid rgba(255, 255, 255, 0.2); /* semi-transparent border */
     padding-top: 10px; /* padding above the copyright text */
-    font-size: 14px; /* font size for the bottom text */
-    font-family: 'Arial', sans-serif; /* font-family for bottom text */
+    font-size: 16px; /* font size for the bottom text */
+    font-family: 'Montserrat', sans-serif;
   }
   
   
