@@ -27,12 +27,11 @@ images.forEach((image, index) => {
   });
 });
 
-const hamburger = document.getElementById('hamburger');
-const menuContainer = document.getElementById('menu-container');
+const menuToggle = document.getElementById('menu-toggle');
+const navLinks = document.getElementById('nav-links');
 
-hamburger.addEventListener('click', () => {
-    menuContainer.classList.toggle('active');
-    hamburger.classList.toggle('active');
+menuToggle.addEventListener('click', () => {
+    navLinks.classList.toggle('show');
 });
 
 

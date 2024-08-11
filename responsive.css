@@ -1,29 +1,46 @@
 
-@media (max-width: 430px) {
+@media (max-width: 480px) {
 
     /* Adjust the header padding */
     header {
         padding: 530px 0;
     }
-    .thailand img {
-        width: 109.72px;
-        height: 161px;
-        padding: 0px 0px 0.18px 0px;
+    .menu-toggle {
+        display: block;
+    }
+    #thailand img {
+        width: 366px; /* Mengubah lebar gambar menjadi 200px */
+        height: 126px; /* Otomatis mengubah tinggi gambar sesuai proporsi */
+        padding: 0.23px 14.29px 0.07px 0px;
         gap: 0px;
         border-radius: 16px 0px 0px 0px;
         opacity: 0px;
-        top: 151px;
-        left: 32px;
+        top: 130px;
+        left: 30px;
         position: absolute;
-
     }
+    
     .potrait {
         width: 366px;
-        height: 126px;
+        height: 156px;
         padding: 0.23px 14.29px 0.07px 0px;
         gap: 0px;
         opacity: 0px;
+        top: 780px;
+        left: 20px;
+        border-radius: 16px;
+        position: absolute;
         
+    }
+    .tentang-button {
+        width: 202px;
+        height:17px;
+        padding: 15px 25px 15px 25px;
+        gap: 10px;
+        border-radius: 100px ;
+        opacity: 0px;
+        top: 310px;
+        left: 30px;
     }
 
     /* Adjust container padding and remove fixed position */
@@ -33,7 +50,7 @@
         left: 25px;
         padding: 16px 24px 16px 24px;
         gap: 32px;
-        border-radius: 32px 0px 0px 0px;
+        border-radius: 32px;
         opacity: 0px;
 
     }
@@ -55,8 +72,14 @@
     }
 
     .nav-links {
+        display: none;
         flex-direction: column;
         gap: 20px;
+    }
+
+    /* Adjust navigation links when displayed */
+    .nav-links.show {
+        display: flex;
     }
 
     .nav-links li a {
@@ -90,6 +113,11 @@
     /* Section adjustments */
     section {
         padding: 100px 0;
+    }
+    .text-overlay {
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 39.01px;
     }
 
     .container {
