@@ -8,10 +8,10 @@ body {
 header {
     background-image: 
         linear-gradient(180deg, rgba(0, 209, 255, 0) 45.54%, #00D1FF 100%), /* Gradien layer */
-        url('assets/img/lisa copy.png'); /* Top background image */
+        url('assets/img/background2.jpeg'); /* Top background image */
     background-size: cover;
     background-position: center;
-    padding: 500px 0; /* Adjusted padding */
+    padding: 400px 0; /* Adjusted padding */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -87,6 +87,86 @@ nav {
 
 .btn-register:hover {
     background-color: #ffcc00;
+}
+
+
+.registration-header {
+  margin-top: 100px;
+  margin-bottom: 20px;
+}
+
+#registration {
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+  max-width: 600px;
+  margin: 0 auto;
+  margin-bottom: 100px;
+}
+
+#registration h2 {
+  color: #007bff;
+  font-weight: bold;
+}
+
+/* Form */
+.form-control {
+  background-color: #f8f9fa;
+  border: none;
+  border-radius: 10px;
+  padding: 15px;
+  font-size: 16px;
+}
+
+.form-control::placeholder {
+  color: #c4c4c4;
+}
+
+.upload-container {
+  width: 100%;
+  max-width: 200px;
+  height: 200px;
+  border: 2px dashed #007bff;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.upload-container input[type="file"] {
+  position: absolute;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+.upload-icon {
+  color: #007bff;
+  font-size: 48px;
+}
+
+.form-check-label a {
+  color: #007bff;
+}
+
+.btn-primary {
+  display: block;
+  width: 100%;
+  padding: 10px 20px;
+  text-align: center;
+  background-color: #007BFF;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  margin-top: 20px;
+  font-size: 16px;
+}
+
+.btn-primary:hover {
+  background-color: #00a6d1;
 }
 
 footer {

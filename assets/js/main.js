@@ -26,3 +26,13 @@ images.forEach((image, index) => {
     }
   });
 });
+
+const hamburger = document.getElementById('hamburger');
+const menuContainer = document.getElementById('menu-container');
+
+hamburger.addEventListener('click', () => {
+    menuContainer.classList.toggle('active');
+    hamburger.classList.toggle('active');
+});
+
+

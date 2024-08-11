@@ -3,36 +3,38 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="assets/img/logo.jpeg" rel="icon">
   <title>Detik Travel</title>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
   <link href='/style.css' rel='stylesheet'>
-  <link href='assets/css/responsive.css' rel='stylesheet'>
+  <link href='responsive.css' rel='stylesheet'>
 </head>
 <body>
-  <header id="home">
-      <div class="containerr">
-        <div class="logo">
-          <img src="assets/img/detik.png" alt="Detik Travel Logo">
+    <header id="home">
+        <div class="containerr">
+            <div class="logo">
+                <img src="assets/img/detik.png" alt="Detik Travel Logo">
+            </div>
+            <nav>
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#program">Tentang Program</a></li>
+                    <li><a href="#berita">Berita</a></li>
+                </ul>
+                <a href="register.html" class="btn-register">Registrasi</a>
+            </nav>
         </div>
-          <nav>
-              <ul class="nav-links">
-                  <li><a href="#home">Home</a></li>
-                  <li><a href="#program">Tentang Program</a></li>
-                  <li><a href="#berita">Berita</a></li>
-              </ul>
-              <a href="register.html" class="btn-register">Registrasi</a>
-          </nav>
-      </div>
-      <div id="thailand">
-        <img src="assets/img/thailand.png" alt="">
-        <a href="#program" class="tentang-button">TENTANG PROGRAM</a>
-      </div>
-      <div class="potrait">
-        <img src="assets/img/photo-1.png" alt="">
-        <img src="assets/img/photo-2.png" alt="">
-        <img src="assets/img/photo-4.png" alt="">
-      </div>
-  </header>
+        <div id="thailand">
+            <img src="assets/img/thailand.png" alt="">
+            <a href="#program" class="tentang-button">TENTANG PROGRAM</a>
+        </div>
+        <div class="potrait">
+            <img src="assets/img/photo-1.png" alt="">
+            <img src="assets/img/photo-2.png" alt="">
+            <img src="assets/img/photo-3.png" alt="">
+        </div>
+    </header>
+    
   
   <main>
       <!-- Add some content to make the page scrollable -->
@@ -46,7 +48,7 @@
                 <p class="program-description">
                     Bergabunglah dalam "Explore Thailand bersama Detiktravel"! Kompetisi ini terbuka bagi pembaca Detiktravel yang ingin menikmati perjalanan ke Thailand. Kunjungi destinasi menakjubkan seperti pantai Pak Bia Island dan destinasi lain di Phuket, Thailand. Jadi bagian dari perjalanan kami dan menangkan hadiah jalan-jalan yang tak terlupakan!
                 </p>
-                <button class="cta-button">DAFTAR SEKARANG</button>
+                <button href="register.html" class="cta-button">DAFTAR SEKARANG</button>
                 <div class="mechanism">
                   <h3 class="mechanism-title">Mekanisme</h3>
                   <ul class="mechanism-list">
@@ -84,6 +86,10 @@
   <section id="berita">  
     <div class="container">
         <div class="left-section">
+            <!-- Text Overlay Div -->
+            <div class="text-overlay">
+                <span>detik</span><span style="color: #f35d2b;">travel</span> Update
+            </div>
             <img src="assets/img/berita-1.png" alt="Doraemon">
             <div class="headline">
                 <p>Warga Thailand Pakai Boneka Doraemon untuk Ritual Pemanggil Hujan</p>

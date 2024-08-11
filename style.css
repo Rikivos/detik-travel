@@ -115,10 +115,26 @@ nav {
     gap: 10px;
     position: absolute;
     top: 633px;
-    right: 360px;
+    right: 500px;
     width: 228px;
     height: 336px;
 }
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    z-index: 1001;
+    position: relative;
+}
+
+.hamburger span {
+    height: 2px;
+    width: 25px;
+    background-color: #333;
+    margin: 4px 0;
+    transition: 0.4s;
+}
+
 
 
 /*main*/
@@ -286,12 +302,13 @@ main > * {
 }
 
 /* Section */
+/* Base Styles (Desktop) */
 section {
     background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url('assets/img/background3.jpeg');
     background-size: cover;
     background-position: center;
-    width: 100%; /* Adjust to 100% to be responsive */
-    padding: 151px 72px 150px 72px; /* Padding for the content inside the section */
+    width: 100%;
+    padding: 151px 0px 150px 0px;
     display: flex;
     justify-content: center;
     position: relative;
@@ -303,11 +320,13 @@ section {
     max-width: 1200px;
     width: 100%;
     gap: 20px;
+    position: relative;
 }
 
 .left-section {
     width: 600px;
     height: auto;
+    position: relative;
 }
 
 .left-section img {
@@ -366,7 +385,7 @@ section {
 
 button {
     align-self: flex-start;
-    padding: 10px 50px; /* Reduced padding for better responsiveness */
+    padding: 10px 50px;
     margin-top: 15px;
     border: none;
     background: #00a2ff;
@@ -379,6 +398,31 @@ button {
 button:hover {
     background: rgba(255, 255, 0, 0.849);
 }
+
+/* New CSS for the text overlay */
+.text-overlay {
+    position: absolute;
+    top: -60px; /* Adjust as needed */
+    left: 20px; /* Adjust as needed */
+    color: rgba(247, 152, 32, 1);
+    font-size: 48px;
+    font-weight: bold;
+    z-index: 2;
+}
+
+.text-overlay span {
+    color: #0043ad;
+}
+
+.text-overlay span:nth-child(2) {
+    color: #f35d2b;
+}
+
+.text-overlay span:nth-child(3) {
+    color: rgba(247, 152, 32, 1);
+}
+
+
 
 
 
@@ -418,7 +462,6 @@ footer {
     width: 100%; /* Make the paragraph take full width */
     opacity: 1; /* Ensure paragraph is visible */
     margin-top: 20px; /* Add space above the paragraph */
-    
   }
   
   footer h1 {
@@ -453,5 +496,6 @@ footer {
     font-size: 16px; /* font size for the bottom text */
     font-family: 'Montserrat', sans-serif;
   }
+
   
   
