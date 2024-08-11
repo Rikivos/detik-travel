@@ -89,3 +89,72 @@ nav {
     background-color: #ffcc00;
 }
 
+footer {
+    background-color: #00bdf2; /* background color similar to the image */
+    padding: 40px 20px; /* padding for the footer */
+    text-align: center; /* center align text */
+    color: #fff; /* white text color */
+    position: relative; /* Ensure the position of elements is relative to the footer */
+  }
+  
+  .footer-content {
+    position: relative;
+    max-width: 1300px;
+    margin: 0 auto; /* Center the content */
+  }
+  
+  .footer-logo {
+    width: 286px; /* Set the width of the image */
+    height: 98px; /* Set the height of the image */
+    padding: 0.18px 11.16px 0.06px 0px; /* Set padding around the image */
+    display: block; /* Ensure the image is a block element */
+    position: relative; /* Make the position relative to its normal position */
+    left: 0; /* Adjust the horizontal position */
+    top: 0; /* Adjust the vertical position */
+    transform: translate(0, 0); /* Move the element */
+    margin: 20px; /* Add margin if needed */
+  }
+  
+  
+  
+  footer p {
+    font-size: 16px; /* font size for paragraphs */
+    margin-bottom: 20px; /* space below paragraphs */
+    font-family: 'Arial', sans-serif; /* font-family for paragraphs */
+    width: 100%; /* Make the paragraph take full width */
+    opacity: 1; /* Ensure paragraph is visible */
+    margin-top: 20px; /* Add space above the paragraph */
+  }
+  
+  footer h1 {
+    font-size: 36px; /* font size for the title */
+    margin-bottom: 10px; /* space below the title */
+    font-family: 'Arial', sans-serif; /* font-family for the title */
+  }
+  
+  footer h1 span {
+    font-weight: bold; /* make the span text bold */
+  }
+  
+  footer .social-icons {
+    margin-top: 20px; /* space above social icons */
+  }
+  
+  footer .social-icons a {
+    margin-right: 10px; /* space between social icons */
+    font-size: 24px; /* font size for social icons */
+    color: #fff; /* white color for social icons */
+    transition: color 0.2s ease; /* transition effect for hover */
+  }
+  
+  footer .social-icons a:hover {
+    color: #f1f1f1; /* lighter color on hover */
+  }
+  
+  .footer-bottom {
+    margin-top: 20px; /* space above footer bottom */
+    border-top: 1px solid rgba(255, 255, 255, 0.2); /* semi-transparent border */
+    padding-top: 10px; /* padding above the copyright text */
+    font-size: 16px; /* font size for the bottom text */
+    font-family: 'Montserrat', sans-serif;
+  }
